@@ -12,6 +12,8 @@
 
   --lightseagreen: #6DB9C2;
   --darkseagreen: #007982;
+  --darkhover: #00555b;
+  --darkesthover: #003034;
 
   --tangerine-gradient: linear-gradient(90deg, #f5c325, #ffd208);
   --orange-gradient: linear-gradient(90deg, #fc9745, #ff7348);
@@ -92,7 +94,7 @@ h1, h2, h3, h4, p {
 
 h1 {
   font-family: "Rufina", sans-serif;
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 1.3em;
 }
 
@@ -132,7 +134,14 @@ button {
 
 /*------------------    End of reset      ------------*/
 
-/*               Utilities | Colors             */
+
+
+.debug {
+    border: 2px solid red;
+}
+
+
+/* --------            Utilities | Colors             */
 .tangerine {
     /* Tangerine is for creative tools and resources */
     background-image: linear-gradient(90deg, #f5c325, #ffd208);
@@ -147,15 +156,44 @@ button {
 }
 
 
+/* -----------                Buttons                   */
 
-.debug {
-    border: 2px solid red;
+.button {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 0.25em;
+  box-shadow: 5px 5px 15px hsla(184, 100%, 18%, 0.2);
+  display: inline-block;
+  max-width: fit-content;
+  padding: 1em 3em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.button::after {
+    display: inline-block;
+    padding-left: 1.5em;
+    content: "\2192";
+}
+
+.button:hover {
+  background-color: var(--darkhover);
+  color: #fff;
 }
 
 
+.banner-button {
+    color: var(--darkseagreen);
+    background-color: rgba(243, 243, 243, 1);
+    margin: 1em 0;
 
+}
 
-/*  -------------------------------------------------   Wave Hero Section --------------------------------------------------------------------------*/
+/*  -----------------------   Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
     display: flex;
@@ -163,19 +201,21 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 50vh;
+    /* min-height: 50vh; */
+    height: minmax(50vh, 100%);
   }
   
   
   .banner-content {
     width: 70vw;
+    min-height: fit-content;
     background-color: transparent;    
   }
   
   
   .banner p {
-    font-size: 1.2em;
-    margin-top: 1em;
+    font-size: 1.3em;
+    margin: 0.5em 0;
   }
   
   
@@ -258,3 +298,4 @@ button {
       transform: translate3d(85px, 0, 0);
     }
   }
+
