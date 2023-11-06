@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@500;800&family=Prata&display=swap');
+
+:root {
+  --bright-tangerine: #ffd208;
+  --tangerine: #f5c325;
+
+  --orange: #fc9745;
+  --grapefruit: #ff7348;
+  --strawberry: #fd5a5c;
+  --dragonfruit: #f2456f;
+
+  --lightseagreen: #6DB9C2;
+  --darkseagreen: #007982;
+
+  --tangerine-gradient: linear-gradient(90deg, #f5c325, #ffd208);
+  --orange-gradient: linear-gradient(90deg, #fc9745, #ff7348);
+  --teal-gradient: linear-gradient(90deg, #007982, #6DB9C2 );
+
+  --lightGray: #fcfcfc;
+  --darkGray: #5d5c5c;
+  --darkGray800: #333;
+  --darkGray900: #111;
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+/* 
+  font-family: 'Montserrat', sans-serif;
+
+  font-family: 'Playfair Display', serif;
+
+  font-family: 'Prata', serif; */
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font: inherit;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, p {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-family: "Rufina", sans-serif;
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-family: "Rufina", sans-serif;
+  font-size: 3rem;
+  color: var(--darkGray800);
+  line-height: 4rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+h4 {
+  color: var(--darkGray800);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  color:var(--darkGray900);
+  line-height: 1.3em;
+}
+
+li,
+a,
+button {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/*------------------    End of reset      ------------*/
+
