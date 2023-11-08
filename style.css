@@ -11,9 +11,9 @@
   --dragonfruit: #f2456f;
 
   --lightseagreen: #6DB9C2;
-  --darkseagreen: #007982;
-  --darkhover: #00555b;
-  --darkesthover: #003034;
+  --seagreen: #007982;
+  --seagreen700: #00555b;
+  --seagreen800: #003034;
 
   --tangerine-gradient: linear-gradient(90deg, #f5c325, #ffd208);
   --orange-gradient: linear-gradient(90deg, #fc9745, #ff7348);
@@ -163,7 +163,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  border-radius: 0.25em;
+  border-radius: 0.5em; 
   box-shadow: 5px 5px 15px hsla(184, 100%, 18%, 0.2);
   display: inline-block;
   max-width: fit-content;
@@ -171,7 +171,7 @@ button {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .button::after {
@@ -181,18 +181,131 @@ button {
 }
 
 .button:hover {
-  background-color: var(--darkhover);
+  background-color: var(--seagreen800);
   color: #fff;
 }
 
 
 .banner-button {
-    color: var(--darkseagreen);
+    color: var(--seagreen700);
     background-color: rgba(243, 243, 243, 1);
     margin: 1em 0;
 
 }
 
+/*  Top navigation  */
+/*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2rem 10%;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  header img {
+    max-width: 100px;
+    height: auto;
+    transition: 0.5s;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  header .navigation {
+    position: relative;
+    display: flex;
+  }
+  
+  header .navigation li {
+    list-style: none;
+    margin-left: 1.3em;
+  }
+  
+  header .navigation li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 1em;
+    transition: all 0.3s ease 0s;
+  }
+  
+  header .dark li a {
+    color: var(--seagreen800);
+  }
+  
+  header .navigation li a:hover {
+    color: var(--seagreen800);
+    background-color: #f1f1f1;
+    opacity: 0.9;
+  }
+  
+  header.sticky {
+    background: white; 
+    opacity: 80%;
+    padding: 1em 5em;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    max-width: 100vw;
+  }
+  
+  header.sticky img {
+    max-width: 75px;
+    height: auto;
+  }
+  
+  header.sticky .navigation li a {
+    color: var(--seagreen800);
+  }
+  
+  header.sticky .navigation li a:hover {
+    color: #fff;
+    background-color: var(--seagreen800);
+    opacity: 1;
+  }
+  
+  header.sticky .nav-button {
+    color: var(--seagreen800);
+    border: 1px solid #003034;
+  }
+  
+  header.sticky .nav-button:hover {
+    background: var(--seagreen800);
+    color: #fff;
+  }
+  
+  .nav-button {
+    border: 1px solid #fff;
+    padding: 1em 1.5em;
+    transition: all 0.5s ease 0s;
+    margin-left: 1em;
+  }
+  
+  .nav-button::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f073";
+    display: inline-block;
+    margin-right: 0.5em;
+  
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .nav-button:hover {
+    background: #fff;
+    color: var(--seagreen800);
+  }
 /*  -----------------------   Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
@@ -201,8 +314,7 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* min-height: 50vh; */
-    height: minmax(50vh, 100%);
+    height: 70vh; 
   }
   
   
@@ -215,12 +327,12 @@ button {
   
   .banner p {
     font-size: 1.3em;
-    margin: 0.5em 0;
+    margin: 1.5em 0 0.5em 0;
   }
   
   
   .banner .banner-content h1 span {
-    color: var(--darkseagreen);
+    color: var(--seagreen700);
     background-color: #fff;
     padding: 0 1rem;
   }
@@ -262,13 +374,12 @@ button {
   .waves {
     position: relative;
     width: 100%;
-    height: 15vh;
+    max-height: 15vh;
     margin-bottom: -7px; /*Fix for safari gap*/
     min-height: 100px;
     /*max-height: 150px;*/
   }
-  
-  /* Animation */
+
   
   .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -299,3 +410,145 @@ button {
     }
   }
 
+/*         Tablet responsive       */
+
+  @media (max-width: 1200px) {
+        h1 {
+            font-size: 2.7em;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            line-height: 1.3em;
+        }
+
+        .banner p {
+            font-size: 1.1em;
+        }
+
+        header, header.sticky {
+            padding: 1em 2em;
+            }
+
+        header .navigation {
+            display: none;
+            }
+
+        header .navigation.active {
+            width: max-content;
+            height: calc(100% - 100px);
+            position: fixed;
+            top: 100px;
+            right: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
+            color: #003034;
+            padding: 3em 2em;
+            border-top-left-radius: 1em;
+        }
+
+        header.sticky .navigation.active {
+            height: calc(100% - 75px);
+            top: 75px;
+            color: #003034;
+        }
+
+        header .navigation.active li {
+            color: #003034;
+            font-size: 1.6em;
+            line-height: 2.2em;
+            font-weight: 700;
+        }
+
+        header.sticky .menuToggle.active {
+            filter: invert(0);
+        }
+
+        header.sticky .menuToggle {
+            filter: invert(1);
+        }
+
+        header .navigation.active a {
+            color: var(--seagreen800);
+        }
+
+        header .navigation.active a:hover {
+            color: var(--lightseagreen);
+            background: none;
+        }
+        .menuToggle {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background: url(/assets/menu.svg);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            margin-left: 2em;
+        }
+
+        .menuToggle.active {
+            background: url(/assets/close-black.svg);
+            filter: invert(1);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+  }
+
+  /*      Mobile resposive */
+  @media (max-width: 580px) {
+    h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      
+      h3 {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        line-height: 1.3em;
+      }
+
+      .banner p {
+        font-size: 1.1em;
+      }
+
+      .banner {
+        height: max-content;
+        padding: 8em 1em 2em 1em;
+      }
+
+      .banner-content {
+        width: 90vw;
+        
+      }    
+      .wave-container {
+        display: none;
+      }
+
+      .button {
+        width: 100%;
+      }
+      .button::after {
+        content: "";
+      }
+  }

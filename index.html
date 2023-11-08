@@ -15,34 +15,37 @@
 <!---------------          Body starts here          ---------------->
 
 <body>
-    <nav>
-        logo
-        about
+    <header>
+
+        <a class="logo" href="index.html"><img src="assets/funficient-color-logo.png" alt="logo"></a>
+    
+        <ul class="navigation">
+            <li><a href="product-teardowns.html">Get direction</a></li>
+            <li><a href="okr-coaching.html">Set goals</a></li>
+            <li><a href="coaching.html">Calibrate</a></li>
+            <li><a href="https://www.blog.funficient.com" target="_blank">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            
+        </ul>
         
-        get direction (product teardown)
-        set goals (OKR's)
-        build momentum (coaching)
-        calibrate (reviews / ensemble)
+        <a href="https://funficient2021.setmore.com/" target="_blank" class="nav-button">Book Now</a>
+        
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+    </header>
 
-        book
-
-
-
-        Header Section:
-
-        Navigation Menu: Links to important pages like Home, About Us, Blog, Services, Contact, etc.
-        Call to Action (CTA) Button: Encourage users to take immediate action, like signing up for the newsletter or scheduling a discovery call.
-
-    </nav>
-
+    <!--                     Header navigation ends here                -->
+    
     <main>
-        <section class="banner teal debug">
+
+        <!--                 Wave Hero banner section                    -->
+
+        <section class="banner teal">
 
             <div class="banner-content">
                 <h1 class="white">You don't need more time.</h1>
                 <h1 class="white">You need <span></span></h1>
                 <!-- <h1 class="white">Want to become a time wielder?</h1> -->
-                <p class="white">Take your productivity to the next level to get more done in less time. </p>
+                <p class="white">Take your productivity to the next level and become a time wielder. </p>
                 <a href="https://funficient2021.setmore.com/" target="_blank" class="button banner-button">Start the conversation</a>
             </div>
 
@@ -60,11 +63,8 @@
                     <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
                     </g>
                 </svg>
-            
-
+    
             </div>
-
-
         
         </section>
 
@@ -169,14 +169,28 @@
 
     </footer>
 
+<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
 
 
-    <select name="select" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select>
-    
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+
 </body>
 
 </html>
