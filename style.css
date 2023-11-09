@@ -506,7 +506,9 @@ header {
     padding: 3rem;
   }
 
-
+  p + p {
+    margin-top: 1.7em;
+  }
 
 
    /* ---------------------------- Value proposition section ----------------- */
