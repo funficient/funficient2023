@@ -13,6 +13,8 @@
   --lightseagreen100: #e6f2f3;
   --lightseagreen200:#cce4e6;
   --lightseagreen: #6DB9C2;
+  --seagreen300:#80bcc1;
+  --seagreen400:#33949b;
   --seagreen: #007982;
   --seagreen700: #00555b;
   --seagreen800: #003034;
@@ -159,6 +161,11 @@ button {
     color: white;
 }
 
+.dark {
+    color: var(--seagreen700);
+    font-weight: 600;
+}
+
 
 /* --------            Utilities | Containers             */
 
@@ -170,7 +177,6 @@ button {
     padding: 2em;
     margin-top: 2em;
     margin: 3em 20%;
-    
 }
 
 .colored-container {
@@ -186,6 +192,12 @@ button {
     align-content: space-between;
     justify-items: center;
     margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
 }
 
 .container {
@@ -685,6 +697,47 @@ header {
 #submit {
     margin-right: 1em;
 }
+
+/* ------------------------------------------------------  Get direction setion ------------------------------------------------*/
+  
+    #direction .grid-container {
+        margin-top: 2em;
+    }
+
+    #direction span {
+        color: var(--seagreen);
+        font-size: inherit;
+        font-weight: 600;
+        
+    }
+  
+    .one {
+        background: #33949b;;
+    }
+
+    .two {
+        background: #006d75;
+        
+         }
+
+    .three {
+        background: var(--seagreen);
+    }
+
+    .four {
+        background:var(--seagreen700);
+    }
+
+    #teardowns .button {
+        background-color: transparent;
+        border: solid 2px var(--lightseagreen100);
+        margin: 2em auto 1em auto;
+    }
+
+    #teardowns .line {
+        border-top: solid 1px var(--lightseagreen100);
+        opacity: 0.4;
+    }
 
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
