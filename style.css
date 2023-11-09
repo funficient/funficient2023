@@ -202,6 +202,7 @@ button {
 
 .container {
     display: grid;
+    
 }
 
 .card-container {
@@ -738,6 +739,8 @@ header {
         border-top: solid 1px var(--lightseagreen100);
         opacity: 0.4;
     }
+
+    
 
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
