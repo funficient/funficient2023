@@ -702,12 +702,14 @@ header {
 /* ------------------------------------------------------  Get direction setion ------------------------------------------------*/
   
     #direction .grid-container, 
-    #goals .grid-container {
+    #goals .grid-container,
+    #calibrate .grid-container {
         margin-top: 2em;
     }
 
     #direction span,
-    #goals span {
+    #goals span, 
+    #calibrate span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
