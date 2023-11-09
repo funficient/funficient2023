@@ -118,7 +118,7 @@ h3 {
 }
 
 h4 {
-  color: var(--darkGray800);
+  color: var(--darkGray);
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -701,11 +701,13 @@ header {
 
 /* ------------------------------------------------------  Get direction setion ------------------------------------------------*/
   
-    #direction .grid-container {
+    #direction .grid-container, 
+    #goals .grid-container {
         margin-top: 2em;
     }
 
-    #direction span {
+    #direction span,
+    #goals span {
         color: var(--seagreen);
         font-size: inherit;
         font-weight: 600;
@@ -740,7 +742,10 @@ header {
         opacity: 0.4;
     }
 
-    
+    #okr .line {
+        margin-top: 1em;
+
+    }
 
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
