@@ -530,6 +530,7 @@ header {
     font-size: 2.2em;
     line-height: 1.2em;
     color: var(--darkGray800);
+    padding-bottom: 1em;
   }
 
   .big-quote::before {
@@ -584,6 +585,12 @@ header {
   /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
     .wide {
         grid-template-columns: 1fr;
+    }
+
+    .narrow {
+        grid-template-columns: 1fr;
+        margin: 3em 25%;;
+        text-align: center;
     }
   
   .conversation {
@@ -791,7 +798,7 @@ header {
     top: 1.5em;
     right: 0;
     background-color: var(--lightseagreen100);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     padding: 1em 2em;
     border-bottom-left-radius: 0.5em;
     border-top-left-radius: 0.5em;
@@ -817,6 +824,8 @@ border: 2px solid #003034;
 #get-started {
     padding: 0 20%;
 }
+
+
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
   .footer {
