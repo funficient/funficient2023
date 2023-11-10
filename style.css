@@ -214,6 +214,7 @@ button {
     display: grid;
     place-content: center;
     padding: 2em;
+    position: relative;
 }
 
 .spacer {
@@ -733,12 +734,20 @@ header {
         background:var(--seagreen700);
     }
 
-    #teardowns .button {
+    #teardowns .button,
+    #coaching .button {
         background-color: transparent;
         border: solid 2px var(--lightseagreen100);
         margin: 2em auto 1em auto;
     }
 
+    #teardowns .button:hover,
+    #coaching .button:hover {
+        background-color: var(--lightseagreen100);
+        color: var(--seagreen800);
+
+    }
+    
     #teardowns .line {
         border-top: solid 1px var(--lightseagreen100);
         opacity: 0.4;
@@ -749,6 +758,41 @@ header {
 
     }
 
+
+    /* ------------------------------------------------------  Coaching and calibrate setion ------------------------------------------------*/
+.accent-text {
+    letter-spacing: 1px;
+    color: #003034;
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+
+#coaching .line {
+    width: 15%;
+    margin: 1em 0 1.5em 0;
+}
+
+.stretch {
+    grid-column: 1/-1;
+}
+
+.recommended {
+    display: flex;
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    background-color: var(--lightseagreen100);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 1em 2em;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+.recommended p {
+    font-weight: 600;
+    color: #006d75;
+}
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
   .footer {
