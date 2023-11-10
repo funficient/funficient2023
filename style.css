@@ -734,6 +734,14 @@ header {
         background:var(--seagreen700);
     }
 
+    .five, .six {
+
+        background: transparent;
+        border: 2px solid #003034;
+
+    }
+
+ 
     #teardowns .button,
     #coaching .button {
         background-color: transparent;
@@ -792,6 +800,18 @@ header {
 .recommended p {
     font-weight: 600;
     color: #006d75;
+}
+
+#teams .secondary-button {
+    
+    background-color: #006d75;
+    color: white;
+}
+
+#teams .secondary-button:hover {
+
+border: 2px solid #003034;
+
 }
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
