@@ -157,6 +157,10 @@ button {
     background-image: linear-gradient(90deg, #007982, #6DB9C2 );
   }
 
+.black {
+    background-color: #000;
+  }
+
 .white {
     color: white;
 }
@@ -435,6 +439,17 @@ header {
     align-items: center;
     position: relative;
     height: 70vh; 
+    
+  }
+
+  .basic-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 8em 0 3em 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   }
   
   
