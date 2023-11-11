@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun-fi-cient | Oops!</title>
+    <meta name="description" content="Discover the who and why behind funficient and how to be more productive.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">
+    <script defer src="components.js"></script>
+</head>
+
+
+<body>
+
+<!---------------          Header navigation section          ---------------->
+
+
+    <header>
+
+        <a class="logo" href="index.html"><img src="assets/funficient-color-logo.png" alt="logo"></a>
+    
+        <ul class="navigation">
+            <li><a href="about.html">About</a></li>
+            <li><a href="get-direction.html">Get direction</a></li>
+            <li><a href="set-goals.html">Set goals</a></li>
+            <li><a href="calibrate.html">Calibrate</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+        
+        <a href="https://funficient2021.setmore.com/" target="_blank" class="nav-button">Book Now</a>
+        
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+    </header>
+
+    <!---------------               Body starts here               ---------------->
+
+    <main>
+
+    <section class="cover-container" id="broken">
+
+        <div class="container ">
+
+                <h2 class="white">Oops!</h2>
+    
+                <h3 class="white">Something is broken.</h3>
+                <p class="white title-text">Nothing to see here.
+                </p>
+    
+                <a href="index.html" class="button">Go back home</a>
+    
+        </div>
+
+            
+
+    </section>
+
+
+</main>
+
+
+
+<!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+
+</body>
+
+</html>

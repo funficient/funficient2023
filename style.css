@@ -200,6 +200,12 @@ button {
     gap: 2em;
 }
 
+
+.grid-3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
 .container {
     display: grid;
     
@@ -864,7 +870,7 @@ border: 2px solid #003034;
   .resources-container > div h2 {
     
     font-size: 1.8em;
-    line-height: 1.3em;
+    line-height: 1.2em;
     margin: 0.5em 0 1em 0;
     font-weight: 600;
   }
@@ -875,6 +881,10 @@ border: 2px solid #003034;
     font-weight: 300;
   }
   
+  .resources-container > div p {
+    
+    font-weight: 400;
+  }
   
   .resources-container > div:nth-last-of-type(6) {
     grid-column: 1/2;
@@ -904,6 +914,10 @@ border: 2px solid #003034;
   .resources-container > div:nth-last-of-type(1) {
     grid-column: 2/4;
     background-color:var(--seagreen300);
+  }
+
+  #resources .button::after {
+    content: "";
   }
   
 /* ------------------------------------------------------  Subscribe setion ------------------------------------------------*/
@@ -955,42 +969,68 @@ border: 2px solid #003034;
   /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
 
 
-.cover-container {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("assets/success.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-#subscription-success .container {
+  .cover-container {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("assets/success.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+  
+  }
+  #subscription-success {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/letter.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+    
+#subscription-success .container,
+#broken .container {
     position: relative;
     margin: 0 30%;
-    top: 30%;
-       
+    top: 30%; 
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 }
 
-#subscription-success p {
+#subscription-success p,
+#broken p {
     font-weight: 300;
 }
 
-#subscription-success .button {
+#subscription-success .button,
+#broken .button {
     margin: 2em;
     color: #003034;
-
+    background-color: #fff;
 }
 
 
-#subscription-success .button:hover {
-   
+#subscription-success .button:hover,
+#broken .button:hover {
+   background-color: #003034;
     color: #fff;
 
 }
+
+#subscription-success a,
+#broken a {
+    place-self: center;
+}
+
+
+#broken {
+    background-image: url("assets/broken.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  
+  }
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
   .footer {
