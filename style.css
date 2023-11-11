@@ -750,17 +750,23 @@ header {
 
  
     #teardowns .button,
-    #coaching .button {
+    #coaching .button,
+    #resources .button {
         background-color: transparent;
         border: solid 2px var(--lightseagreen100);
         margin: 2em auto 1em auto;
     }
 
     #teardowns .button:hover,
-    #coaching .button:hover {
+    #coaching .button:hover,
+    #resources .button:hover {
         background-color: var(--lightseagreen100);
         color: var(--seagreen800);
 
+    }
+
+    #resources .button::after {
+        content: "";
     }
     
     #teardowns .line {
@@ -835,8 +841,9 @@ border: 2px solid #003034;
 
 .resources-container > div {
     height: 400px;
-    padding: 4em;
-    /*background: url(assets/ducks.jpg);*/
+    padding: 3em;
+    background: url(assets/00013159.jpg);
+    position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     cursor: pointer;
@@ -899,20 +906,59 @@ border: 2px solid #003034;
     background-color:var(--seagreen300);
   }
   
-  .bg1 {
-    background: url(assets/00013159.jpg);
-    background-position: 50% 50%;
-  }
+/* ------------------------------------------------------  Subscribe setion ------------------------------------------------*/
+ 
+
+.email-subscription-container{
+    display: flex;
+    border: solid 2px white;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-top: 1.2em;
+    width: 50%;
+    box-shadow: 2px rgba(207, 207, 207, 0.8);
+}
+.email-input{
+    flex: 1;
+    border: none;
+    margin: 0 ;     
+    padding: 1em; 
+    color: var(--seagreen);
+}
+
+.submit-button{
+      display: inline-flex;
+      border: none;
+      background-color: var(--seagreen400);
+      color: #fff;
+      height: 3em;
+      width: max-content;
+      align-items: center;
+      padding: 1em 2em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--seagreen700);
+
+}
+ 
+
+
   
-  .bg2 {
-    background: url(assets/oops.jpg);
-    background-position: 50% 25%;
-  }
+  .email-input:focus {
+    
+    background-color: var(--lightseagreen100);
+    color: var(--seagreen900);
   
-  .bg3 {
-    background: url(assets/testimonials.jpg);
-    background-position: 50% 25%;
+    
   }
+
+
+
+  
 
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
