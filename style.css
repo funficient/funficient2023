@@ -944,22 +944,53 @@ border: 2px solid #003034;
     background-color: var(--seagreen700);
 
 }
- 
-
-
   
   .email-input:focus {
     
     background-color: var(--lightseagreen100);
     color: var(--seagreen900);
-  
-    
+
   }
 
+  /* ------------------------------------------------------  Subscription success setion ------------------------------------------------*/
 
 
-  
+.cover-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/success.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
+
+#subscription-success .container {
+    position: relative;
+    margin: 0 30%;
+    top: 30%;
+       
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#subscription-success p {
+    font-weight: 300;
+}
+
+#subscription-success .button {
+    margin: 2em;
+    color: #003034;
+
+}
+
+
+#subscription-success .button:hover {
+   
+    color: #fff;
+
+}
   /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
   
   .footer {
@@ -1186,6 +1217,12 @@ border: 2px solid #003034;
         height: 1.5em;
 
       }
+
+      #subscription-success .container {
+        
+        margin: 0 10%;
+        
+    
 
   }
 
