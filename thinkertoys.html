@@ -15,126 +15,68 @@
 
 
 <body>
-
-<!---------------          Header navigation section          ---------------->
-
-
-    <header>
-
-        <a class="logo" href="index.html"><img src="assets/funficient-color-logo.png" alt="logo"></a>
     
-        <ul class="navigation">
-            <li><a href="about.html">About</a></li>
-            <li><a href="get-direction.html">Get direction</a></li>
-            <li><a href="set-goals.html">Set goals</a></li>
-            <li><a href="calibrate.html">Calibrate</a></li>
-            <li><a href="resources.html">Resources</a></li>
+<main>
+    <div class="grid-2-container ">
+
+<!-------------------------------------- Side menu section ------------------------------->
+
+<div class="side-menu ">
+    <h2 class="">Thinker Toys</h2>
+    
+    <p class="tagline">Gain a fresh perspective with a random input. </p>
+    
+    
+    
+
+    <div class="instructions">
+        <h3>INSTRUCTIONS</h3>
+        <ul class="instructions">
+            <li>Draw a card.</li>
+            <li>Identify all the main characteristics of the object. 
+                For example, if the object is "Menu", typical characteristics could include things like 
+                list of everything on offer; categorized per type of food or drink; 
+                contains prices for items; visualize frequently asked questions; etc. 
+            </li>
+            <li>Think about your problem and force connections to the object on the card.  
+                For example, how can you list everything on offer?  Or how can you make visual 
+                everything customers always want to know without them having to ask you?
+            </li>
+            <li>Rinse. Repeat. Until you have enough ideas to move forward.</li>
+
         </ul>
-        
-        <a href="https://funficient2021.setmore.com/" target="_blank" class="nav-button">Book Now</a>
-        
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-    </header>
+    </div>
 
-    <!---------------               Body starts here               ---------------->
+    <p class="footer-text">This ThinkerToy was originally created as Soap, 
+        Soup and Sand by Michael Michalko, author of the book ThinkerToys.
+        All images courtesy www.unsplash.com</p>
 
-    <main>
+</div>
 
-    <!---------------                 Hero banner section     ----------------->
-
-        <section class="basic-banner  black ">
-
-            <div class="banner-content short ">
-                <h1 class="white">Thinker Toys</h1>
-                <p class="white">Gain a fresh perspective with a random input. </p>
-                
-            </div>
-        
-        </section>
-
-
-    <!-------------------------------------- Quote ---------------------------------------->
-    <section class="cards-container debug">
-
-        <div class="card-box">
+<div class="cards-container ">
+    <div class="card-box">
                                                 
-            <div id="cards-display">
-                    <h3>Pick a card </h3>
-                    <img src="cards/background.png" width="360" height="595" alt="image with question mark">
-            </div>
-            
+        <div id="cards-display">
+                <h3>Pick a card </h3>
+                <img src="cards/background.png" width="360" height="585" alt="image with question mark">
         </div>
-
-        <button class="button" id="draw">Draw card <img src="assets/Shuffle.svg" alt="Shuffle icon"></button>
-    
-    </section>
-    
-    <footer>
-        <br>
-        <p class="smallText">This ThinkerToy was originally created as Soap, Soup and Sand by <strong>Michael Michalko</strong>, author of the book ThinkerToys.
-         <br>All images courtesy www.unsplash.com</p>
-         <br>
-         <br>
-    </footer>  
-
         
-    <!------------------------------------------------------------------- Footer section -------------------------------------------------------------->
-    <footer class="footer black">
-
-        <div class="container">
-
-            <div>
-                <h2 class="titleText white">Play your way to productivity.</h2>       
-            </div>   
-
-            <div class="footerRow">
-
-                <div class="copyrightText">
-                    <p>
-                        Copyright 2023 Kate Dames | <strong>www.funficient.com</strong>  |  All rights reserved.
-                    </p>
-                </div>
-
-                <ul class="social">
-                    <li><a href="https://www.instagram.com/funficient/" target="_blank" title="Instagram profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
-                    <li><a href="https://www.linkedin.com/in/kate-dames-509631171/" target="_blank" title="LinkedIn profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a></li>
-                    <li><a href="https://hci.social/@funficient" target="_blank" title="Mastodon profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg></a></li>
-                    <li><a href="https://medium.com/@funficient" target="_blank" title="Medium profile"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg></a></li>
-                    <li></li>
-                </ul>
-
-            </div>
-            
-        </div>
-
-    </footer>
-
-
+    </div>
+    
+    <button class="shuffle-button" id="draw">Draw card </button>
+   
+    
+    
+</div>
+        
 </main>
 
 
 
 <!------------------------------------------------------------------- Javascript -------------------------------------------------------------->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+<script src="cards.js"></script>
 
-<script type="text/javascript">
-
-    window.addEventListener("scroll", function(){
-
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
-
-    function toggleMenu(){
-        const menuToggle = document.querySelector('.menuToggle');
-        const navigation = document.querySelector('.navigation');
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-    }
-
-</script>
 
 </body>
 
